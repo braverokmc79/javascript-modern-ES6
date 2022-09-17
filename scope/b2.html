@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none; 
+            border: 1px solid #eeee;
+            padding: 10px;
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <ul>
+            <li>javarcirpt</li>
+            <li>java</li>
+            <li>python</li>
+            <li>django</li>
+        </ul>
+    </div>
+
+<script>
+    var list =document.querySelectorAll("li");
+    // for(var i=0; i<list.length; i++){
+    //     list[i].addEventListener("click", function(){
+    //         console.log(i +"번째 리스트입니다.");
+    //     });
+    // }클로저(closure)는 내부함수가 외부함수의 맥락(context)에 접근할 수 있는 것
+       // var 변수 사용시 외부에 함수 i값이 누적되어 " 4번째 리스트입니다." 출력
+    // =>
+    for(let i=0; i<list.length; i++){
+        list[i].addEventListener("click", function(){
+            console.log(i +"번째 리스트입니다.");
+        });
+    }
+
+</script>
+
+
+</body>
+</html>
