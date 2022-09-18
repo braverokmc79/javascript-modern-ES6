@@ -1,2 +1,5 @@
-import './index.css';
-console.log('hello webpack!!');
+import './css/index.css';
+import blog from './main';
+
+const myblog = new blog();
+
