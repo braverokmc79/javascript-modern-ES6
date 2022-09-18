@@ -5,6 +5,7 @@
 /LEARN-WEBPACK/node_modules
 /node_modules
 /module/node_modules
+/minproject/node_modules
 /.pnp
 .pnp.js
 
