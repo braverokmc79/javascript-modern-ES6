@@ -25,17 +25,3 @@ const newObj = Object.setPrototypeOf({
 
 console.log("myHealth is", newObj);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
