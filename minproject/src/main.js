@@ -12,14 +12,20 @@ class Blog {
 
     async getData(dataURL) {
         const list = await fetch(dataURL).then(res => res.json()).then(data => data);
-        console.log(" list type :", typeof list);
-        list.map((v) => {
-            console.log(v.title);
-            return v;
-        })
+        this.insertPosts(list);
 
     }
 
+    insertPosts(list) {
+        const ul = document.querySelector(".blogList > ul");
+        list.map((item) => (
+            ul.innerHTML += `<li><a href=${item.url}>
+            <img src="${item.thumbnailUrl}">
+            ${item.title}</a >
+            </li > `
+        ));
+
+    }
 
 }
 
