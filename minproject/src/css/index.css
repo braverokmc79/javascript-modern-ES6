@@ -21,7 +21,7 @@
   display: block;
   list-style: none;
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   width: 120px;
   height: 250px;
   border: 1px solid gray;
@@ -48,10 +48,18 @@
 }
 
 .blogList .like{
-  cursor: pointer;
-  position: absolute;
-  bottom:0;
-  color: #3f87ca;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    left: 0;
+    background: #3c3b3bee;
+    border: none;
+}
+
+.blogList .like:hover{
+    background: #000;
 }
 
 .blogList .unlike{
