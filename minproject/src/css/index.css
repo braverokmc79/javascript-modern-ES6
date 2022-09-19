@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.blogList li{
+.blogList li , .like-list  li{
   display: block;
   list-style: none;
   margin-top: 1rem;
@@ -33,21 +33,18 @@
   text-align: center;
 }
 
-.blogList a{
+.blogList a , .like-list a{
   text-decoration: none;
   color:#222;
   font-size: 0.9rem;
 }
-.blogList a{
-  text-decoration: none;
-  color:#222
-}
 
-.blogList  a:hover{
+
+.blogList  a:hover, .like-list a:hover{
   color:gray;
 }
 
-.blogList .like{
+.blogList .like , .blogList .unlike , .like-list .unlike{
     cursor: pointer;
     position: absolute;
     bottom: 0;
@@ -67,42 +64,21 @@
   position: absolute;
 }
 
+.unlike{
+   background: #d61024ee !important;
+   color: #fff;
+}
+.unlike:hover{
+   background: #880c18ee;
+    color: #fff;
+}
+
 .like-list h4{
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.blogList img{
+.blogList img , .like-list img{
   width: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
